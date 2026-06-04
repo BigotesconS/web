@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/eq.ico" type="image/x-icon">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/responsivo.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <title>CB AxarBasket</title>  
+</head>
+
+
+<body>							
+<div class="container-fluid"> 
+        <header>
+                <nav class="navbar navbar-expand-sm navbar"> 
+                        <!--Logo del equipo-->
+                        <div class="col-4 col-lg-5 text-center">
+                                        <a href="index.html"><img src="img/eq.png" class="img-fluid" width="150" alt="escudo del CB AxarBasket"></a>
+                        </div>
+                        <!--Esto es para el desplegable que se ve en lo movile-->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!--Esto es el contenido que esta en el desplegable-->
+                        <div class="collapse navbar-collapse row" id="menu">
+                                
+                                <nav class="navbar-nav align-items-center">                                        
+
+
+                                                <div class="col-6 col-lg-4 text-start text-center  me-md-4">
+                                                                <h1 class=" letra-blanca">CB AxarBasket</h1>
+                                                                <h3 class="letra-blanca">El club de la Axarquía</h3>
+                                                </div>
+                                                <div class="d-flex justify-content-end gap-3">
+                                                        <a class="nav-link text-white" href="submenu/contacto.html"><i class="bi bi-person-rolodex"></i></a>
+                                                        <a class="nav-link text-white" href="submenu/equipo.html"><i class="bi bi-dribbble fs-5"></i></a>
+                                                        <a class="nav-link text-white" href="submenu/tienda.html"><i class="bi bi-cart"></i></a>
+                                                        <a class="nav-link text-white" href="submenu/noticias.html"><i class="bi bi-newspaper"></i></a>
+                                                        <a class="nav-link text-white" href="submenu/galeria.html"><i class="bi bi-image"></i></a>
+                                                </div>
+                                </nav>
+                        </div>                       
+                </nav>
+        </header>
+</div>
+
+<!-- Aquí comiensa el cuerpo del menú-->
+<div class="container mt-5">
+
+<div class="foto1">
+    <div class="container text-dark">
+        <h2 class="display-3 fw-bold">¡Somos Campeones!</h2>
+        <h3 class="text-muted">CB AxarBasket</h3>
+        <strong class="prf p-1">Tras una gloriosa temporada, el AxarBasket consiguió proclamarse como campeones de liga</strong>
+    </div>
+</div>
+<hr>
+    <div class="card mb-3 col-12">
+        <div class="card-header fnd-naranja text-center text-white">
+            Último Partido
+        </div>
+
+        <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center">
+                            <img src="img/eq_rival.png" alt="Logo Equipo Local" class="img-fluid mb-2" style="max-width: 120px;">
+                            <h5>CB Urban Eagles</h5>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                            <h2 class="display-4">67 - 70</h2>
+                            <p class="text-muted text-center">30/05/2042</p>
+                            <p class="text-center">Pabellón de la Axarquía</p>
+                    </div>
+                    
+                    <div class="col-md-4 text-center">
+                            <img src="img/eq.png" alt="Logo Equipo Visitante" class="img-fluid mb-2" style="max-width: 80px;">
+                            <h5>CB AxarBasket</h5>
+                    </div>
+                </div>
+        </div>
+
+        <div class="card-footer text-muted text-center">
+            MVP: J.Villar (30 pts, 5 reb, 7 ast, 3 rob.) 
+        </div>
+    </div>
+<hr>
+	  <div class="row align-items-center g-4"> 
+	        <div class="col-12 col-md-12 col-lg-8 d-none d-md-block">
+	            <section class="carrusel d-flex justify-content-center gap-2">
+	                
+	                <img src="img/minicarrusel/equipito.png" class="img-fluid" alt="Equipo de baloncesto" 
+	                     onmouseover="cambiarTexto('Jugadores del Club', 'Consulta todos los jugadores que forman parte del CB AxarBasket esta temporada.')">
+	                
+	                <img src="img/minicarrusel/pelota.png" class="img-fluid" alt="Una pelota Spalding" 
+	                     onmouseover="cambiarTexto('Últimas Noticias', 'Entérate de la actualidad de nuestra plantilla, resultados del fin de semana y crónicas de los partidos.')">
+	                
+	                <img src="img/minicarrusel/tienda.png" class="img-fluid" alt="Una tienda" 
+	                     onmouseover="cambiarTexto('Tienda Oficial', 'Consigue la equipación oficial, sudaderas y accesorios del equipo para animar en el pabellón.')">
+	            
+	            </section>
+	        </div>
+
+	        <div class="col-12 col-md-12 col-lg-4 text-center text-lg-start">
+	            <div class="p-4 border rounded bg-light shadow-sm">
+	                <h4 class="fw-bold" id="info-titulo">
+	                    Descubre el Club
+	                </h4>
+	                <p id="info-descripcion">
+	                    Si estás en ordenador, pasa por encima de las imagenes con el ratón, si no, descubre el club desde el menú la tienda, noticias, últimos partidos, etc...
+	                </p>
+	            </div>
+	        </div>
+		</div>
+
+
+</div>
+
+<!--Aqui empieza el futer-->
+	   <footer class="text-center py-3 mt-2">
+			<span class="me-4">&copy; CB AxarBasket desde 2026 </span>
+			<a href="https://www.youtube.com/"><i class="bi bi-youtube me-1"></i></a>
+			<a href="https://www.instagram.com"><i  class="bi bi-instagram me-1"></i></a>
+			<a href="https://x.com/"><i class="bi bi-twitter-x me-1"></i></a>
+			<a href="https://www.twitch.tv/"><i class="bi bi-twitch me-1"></i></a>
+	    </footer>
+
+        <script src="js/index.js"></script>
+</body>
+</html>

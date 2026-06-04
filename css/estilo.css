@@ -1,0 +1,89 @@
+* {
+        cursor: url(../img/punterito.png), default;
+        margin: 0;
+        padding: 0;
+        font-family: Verdana;
+}
+
+body{
+        
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100dvh;
+}
+
+/* Esto se encarga de opacar un poco la foto y de que el texto se vea bien en el texto de somos campeones del index*/
+.foto1 {
+    min-height: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;         
+    position: relative;
+}
+
+.foto1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+    background-image: url(../img/minicarrusel/celebración.png);
+    background-size: cover;
+    background-position: center;    
+    opacity: 0.5; 
+}
+
+.foto1 > * {
+    position: relative;
+}
+
+
+/* CSS para el carrusel de las fotos*/
+section{
+        display: flex;
+        width: 800px;
+        height: 430px;
+}
+section img{
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease;
+}
+section img:hover{
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
+}
+
+
+p {
+  text-align: justify;
+}
+
+
+.prf{
+        background-color: aliceblue;
+}
+
+header, footer, .fnd-naranja{
+        background-color: orangered;
+        padding-bottom: 2%;
+        padding-top: 2%;
+        color: aliceblue;
+}
+
+/* CSS para la Galería */
+        /* Este se encarga a la hora de como se comporta la imagen cuando no ha sido clicada*/
+.gallery-item {
+        transition: opacity 0.3s ease;
+}
+.gallery-item:hover {
+        opacity: 0.75;
+}
+
+        /*Este trozo se encarga de subrayar el filtro que esta escogido*/
+.filter-btn.active {
+        border-bottom: 2px solid orangered ;
+}

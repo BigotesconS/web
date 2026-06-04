@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../img/eq.ico" type="image/x-icon">
+	<!-- Bootstrap 5 CSS (Actualizado a la versión de tu plantilla) -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/estilo.css">
+	<link rel="stylesheet" href="../css/responsivo.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+	<!-- Scripts originales de tu plantilla -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" xintegrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" xintegrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" xintegrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <title>Galería - CB AxarBasket</title> 
+</head>
+
+<body class="bg-white text-dark">							
+	<div class="container-fluid"> 
+			<header>
+					<nav class="navbar navbar-expand-sm navbar"> 
+							<!--Logo del equipo-->
+							<div class="col-4 col-lg-5 text-center">
+											<a href="../index.html"><img src="../img/eq.png" class="img-fluid" width="150" alt="escudo del CB AxarBasket"></a>
+							</div>
+							<!--Esto es para el desplegable que se ve en lo movile-->
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+									<span class="navbar-toggler-icon"></span>
+							</button>
+							<!--Esto es el contenido que esta en el desplegable-->
+							<div class="collapse navbar-collapse row" id="menu">	
+									<nav class="navbar-nav align-items-center">                                        
+
+													<div class="col-6 col-lg-4 text-start text-center me-md-4">
+																	<h1 class=" letra-blanca">CB AxarBasket</h1>
+																	<h3 class="letra-blanca">La galería del club</h3>
+													</div>
+													<div class="d-flex justify-content-center gap-3">
+															<a class="nav-link text-white" href="contacto.html"><i class="bi bi-person-rolodex"></i></a>
+															<a class="nav-link text-white" href="equipo.html"><i class="bi bi-dribbble fs-5"></i></a>
+															<a class="nav-link text-white" href="tienda.html"><i class="bi bi-cart"></i></a>
+															<a class="nav-link text-white" href="noticias.html"><i class="bi bi-newspaper"></i></a>
+                                                            <a class="nav-link text-white" href="galeria.html"><i class="bi bi-image"></i></a>
+													</div>
+									</nav>
+							</div>                       
+					</nav>
+			</header>
+	</div>
+
+	<div class="container py-5">
+
+
+        <!-- Filtros para filtrat las imagenes -->
+        <div class="row mb-5">
+            <div class="col-12 d-flex justify-content-center flex-wrap gap-3">
+                <button class="btn btn-link text-decoration-none text-secondary text-uppercase filter-btn active" data-filter="todas">Todas</button>
+                <button class="btn btn-link text-decoration-none text-secondary text-uppercase filter-btn" data-filter="partidos">Partidos</button>
+                <button class="btn btn-link text-decoration-none text-secondary text-uppercase filter-btn" data-filter="equipo">Equipo</button>
+            </div>
+        </div>
+
+        <!-- Cuadrícula de la Galería donde aparcen las fotillos-->
+        <div class="row" id="gallery-container">
+            
+            <!-- Imagen 1 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 gallery-col mb-4" data-category="equipo">
+                <div class="gallery-item ratio ratio-1x1 bg-light" onclick="openModal('../img/noticias/abonos.png')">
+                    <img src="../img/noticias/abonos.png" alt="abonados" class="object-fit-cover ">
+                </div>
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 gallery-col mb-4" data-category="equipo">
+                <div class="gallery-item ratio ratio-1x1 bg-light" onclick="openModal('../img/noticias/celebración.png')">
+                    <img src="../img/noticias/celebración.png" alt="celebración del titulo" class="object-fit-cover ">
+                </div>
+            </div>
+            
+            <!-- Imagen 3 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 gallery-col mb-4" data-category="partidos">
+                <div class="gallery-item ratio ratio-1x1 bg-light" onclick="openModal('../img/noticias/cuartos.png')">
+                    <img src="../img/noticias/cuartos.png" alt="cuartos" class="object-fit-cover ">
+                </div>
+            </div>                    
+    
+            <!-- Imagen 4 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 gallery-col mb-4" data-category="equipo">
+                <div class="gallery-item ratio ratio-1x1 bg-light" onclick="openModal('../img/noticias/fichaje_entrenador.png')">
+                    <img src="../img/noticias/fichaje_entrenador.png" alt="fichaje" class="object-fit-cover ">
+                </div>
+            </div> 
+
+            <!-- Imagen 5 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 gallery-col mb-4" data-category="partidos">
+                <div class="gallery-item ratio ratio-1x1 bg-light" onclick="openModal('../img/noticias/semis.png')">
+                    <img src="../img/noticias/semis.png" alt="semis" class="object-fit-cover ">
+                </div>
+            </div> 
+
+            <!-- Imagen 6 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 gallery-col mb-4" data-category="partidos">
+                <div class="gallery-item ratio ratio-1x1 bg-light" onclick="openModal('../img/noticias/pachanga.png')">
+                    <img src="../img/noticias/pachanga.png" alt="pachanga de basket" class="object-fit-cover ">
+                </div>
+            </div> 
+
+            <!-- Imagen 7 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 gallery-col mb-4" data-category="equipo">
+                <div class="gallery-item ratio ratio-1x1 bg-light" onclick="openModal('../img/tienda/kit.png')">
+                    <img src="../img/tienda/kit.png" alt="kit de partido" class="object-fit-cover ">
+                </div>
+            </div> 
+            
+            <!-- Imagen 8 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 gallery-col mb-4" data-category="partidos">
+                <div class="gallery-item ratio ratio-1x1 bg-light" onclick="openModal('../img/minicarrusel/equipito.png')">
+                    <img src="../img/minicarrusel/equipito.png" alt="pachanga de basket" class="object-fit-cover ">
+                </div>
+            </div> 
+
+        </div>
+    </div>
+
+	<!-- Este es cuando la imagen se abre al ser clicada -->
+    <div class="modal fade" id="imageModal">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-transparent border-0">
+                <button class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                <img src="" id="modalImage" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+
+
+
+	<!--Aqui empieza el footer original-->
+	<footer class="text-center py-3 mt-2">
+		<span class="me-4">&copy; CB AxarBasket desde 2026 </span>
+		<a href="https://www.youtube.com/"><i class="bi bi-youtube me-1"></i></a>
+		<a href="https://www.instagram.com"><i  class="bi bi-instagram me-1"></i></a>
+		<a href="https://x.com/"><i class="bi bi-twitter-x me-1"></i></a>
+		<a href="https://www.twitch.tv/"><i class="bi bi-twitch me-1"></i></a>
+	</footer>
+
+	<!-- Estos scripts se encargan del funcionamiento del filtro y de que se agrande la foto al clicarla -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/galeria.js"></script>
+</body>
+</html>
